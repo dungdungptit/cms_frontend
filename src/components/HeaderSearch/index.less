@@ -1,0 +1,37 @@
+.searchInput {
+  position: absolute;
+  right: 59px;
+  bottom: 10px;
+  height: 28px;
+  border: 1px solid #949494;
+  border-radius: 29px;
+  width: 270px;
+  background: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+  // border-radius: 500px;
+  height: 26px;
+  cursor: pointer;
+
+  .input {
+
+    width: 0;
+    min-width: 0;
+    overflow: hidden;
+    background: transparent;
+    border-radius: 0;
+    transition: width 0.3s, margin-left 0.3s;
+
+    :global(.ant-select-selection) {
+      background: transparent;
+    }
+
+    input {
+      box-shadow: none !important;
+    }
+
+    &.show {
+      width: 210px;
+      margin-left: 8px;
+    }
+  }
+}
